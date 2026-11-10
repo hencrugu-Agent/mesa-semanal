@@ -1,26 +1,167 @@
 @import "tailwindcss";
 
+/* El modo oscuro depende SOLO de la clase .dark en <html> (no de la preferencia del SO),
+   así el botón Claro / Oscuro / Auto controla realmente los colores. */
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #FDFBF7;
+  --foreground: #1F2937;
+  
+  /* Paleta Cálida de Mercado Peruano */
+  --market-crema: #FDFBF7;
+  --market-crema-dark: #F5EFE6;
+  --market-surface: #FFFFFF;
+  --market-aji: #D97706;
+  --market-aji-light: #FEF3C7;
+  --market-culantro: #15803D;
+  --market-culantro-light: #DCFCE7;
+  --market-terracota: #C2410C;
+  --market-terracota-light: #FFEDD5;
+  --market-grafito: #1F2937;
+  --market-muted: #6B7280;
+  --market-border: #E5E0D8;
+}
+
+html.dark {
+  --background: #07090F;
+  --foreground: #D1FFD7;
+  --market-crema: #07090F;
+  --market-crema-dark: #0D101C;
+  --market-surface: #111526;
+  --market-aji: #FFB703;
+  --market-aji-light: rgba(255, 183, 3, 0.18);
+  --market-culantro: #00FF66;
+  --market-culantro-light: rgba(0, 255, 102, 0.18);
+  --market-terracota: #FF5E00;
+  --market-terracota-light: rgba(255, 94, 0, 0.18);
+  --market-grafito: #00FF88;
+  --market-muted: #8E9DBA;
+  --market-border: #1E2840;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-market-crema: var(--market-crema);
+  --color-market-crema-dark: var(--market-crema-dark);
+  --color-market-surface: var(--market-surface);
+  --color-market-aji: var(--market-aji);
+  --color-market-aji-light: var(--market-aji-light);
+  --color-market-culantro: var(--market-culantro);
+  --color-market-culantro-light: var(--market-culantro-light);
+  --color-market-terracota: var(--market-terracota);
+  --color-market-terracota-light: var(--market-terracota-light);
+  --color-market-grafito: var(--market-grafito);
+  --color-market-muted: var(--market-muted);
+  --color-market-border: var(--market-border);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--market-crema);
+  color: var(--market-grafito);
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  -webkit-tap-highlight-color: transparent;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* Adaptación para Tema Oscuro con Acentos y Letras Fosforescentes */
+html.dark body {
+  background-color: #07090F !important;
+  color: #D1FFD7 !important;
+}
+
+html.dark .bg-white {
+  background-color: #111526 !important;
+  border-color: #1E2840 !important;
+}
+
+html.dark .bg-\[\#FAF7F2\] {
+  background-color: #0B0E1A !important;
+  border-color: #1A2238 !important;
+}
+
+html.dark .bg-\[\#FDFBF7\] {
+  background-color: #07090F !important;
+}
+
+html.dark .bg-\[\#F5F5FA\] {
+  background-color: #13182B !important;
+  border-color: #202A44 !important;
+}
+
+html.dark .text-\[\#1E1E2D\] {
+  color: #00FF66 !important;
+  text-shadow: 0 0 10px rgba(0, 255, 102, 0.45);
+}
+
+html.dark .text-\[\#1F2937\] {
+  color: #E2FFE8 !important;
+}
+
+html.dark .text-\[\#8A8A99\] {
+  color: #8E9DBA !important;
+}
+
+html.dark .border-\[\#F0E6D8\],
+html.dark .border-\[\#E5E0D8\],
+html.dark .border-\[\#EFE8DD\],
+html.dark .border-\[\#EBEBF2\] {
+  border-color: #1E2945 !important;
+}
+
+html.dark input,
+html.dark select {
+  background-color: #0C101D !important;
+  color: #00FF88 !important;
+  border-color: #223050 !important;
+}
+
+html.dark input::placeholder {
+  color: #556783 !important;
+}
+
+/* Efectos fosforescentes (neón) */
+.neon-text-green {
+  color: #00FF66;
+  text-shadow: 0 0 8px rgba(0, 255, 102, 0.5), 0 0 16px rgba(0, 255, 102, 0.25);
+}
+
+.neon-text-orange {
+  color: #FF8800;
+  text-shadow: 0 0 8px rgba(255, 136, 0, 0.5), 0 0 16px rgba(255, 136, 0, 0.25);
+}
+
+.neon-text-cyan {
+  color: #00F5FF;
+  text-shadow: 0 0 8px rgba(0, 245, 255, 0.5);
+}
+
+/* Tipografía de títulos */
+.font-serif-gastronomy {
+  font-family: Georgia, Cambria, "Times New Roman", serif;
+  letter-spacing: -0.015em;
+}
+
+/* Números y precios tabulares mono */
+.font-mono-numbers {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Estilos de impresión para la lista de compras del mercado */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .no-print, header, nav, footer, button {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .print-card {
+    border: 1px solid #ccc !important;
+    break-inside: avoid;
+    box-shadow: none !important;
+  }
 }

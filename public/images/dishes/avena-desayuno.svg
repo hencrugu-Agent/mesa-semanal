@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <rect width="400" height="300" fill="#FDFBF7"/>
+
+  <!-- Tazón de Avena cremosa con leche -->
+  <ellipse cx="160" cy="175" rx="80" ry="55" fill="#E5DCCE" stroke="#B8A793" stroke-width="2.5"/>
+  <ellipse cx="160" cy="165" rx="68" ry="42" fill="#FEF3C7"/>
+  <!-- Hojuelas y canela espolvoreada -->
+  <ellipse cx="145" cy="155" rx="8" ry="5" fill="#FDE68A"/>
+  <ellipse cx="170" cy="165" rx="8" ry="5" fill="#FDE68A"/>
+  <line x1="140" y1="145" x2="180" y2="165" stroke="#78350F" stroke-width="2" stroke-dasharray="3,3"/>
+
+  <!-- Pan con tajada de queso andino artesanal -->
+  <ellipse cx="280" cy="180" rx="55" ry="32" fill="#F5EFE6" stroke="#D5C5B2" stroke-width="2"/>
+  <ellipse cx="280" cy="170" rx="40" ry="20" fill="#CA8A04"/>
+  <polygon points="265,155 305,158 295,175 255,170" fill="#FEF08A" stroke="#FACC15" stroke-width="1.5"/>
+
+  <!-- Badge Desayuno -->
+  <rect x="20" y="20" width="86" height="26" rx="13" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.2"/>
+  <text x="63" y="37" font-family="sans-serif" font-size="11" font-weight="bold" fill="#B45309" text-anchor="middle">DESAYUNO</text>
+</svg>
