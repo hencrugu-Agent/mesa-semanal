@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <radialGradient id="plateGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="85%" stop-color="#F5EFE6"/>
+      <stop offset="100%" stop-color="#E5DCCE"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="300" fill="#FDFBF7"/>
+  <circle cx="200" cy="150" r="135" fill="#EFE8DD" opacity="0.5"/>
+  
+  <circle cx="200" cy="150" r="125" fill="url(#plateGrad)" stroke="#D5C5B2" stroke-width="3"/>
+  <circle cx="200" cy="150" r="105" fill="#FBF7EE" stroke="#EFE6D8" stroke-width="2"/>
+  
+  <!-- Papas fritas bastón crocantes en la base -->
+  <rect x="135" y="150" width="45" height="12" rx="3" fill="#FBBF24" stroke="#D97706" stroke-width="1.2" transform="rotate(-15 135 150)"/>
+  <rect x="150" y="165" width="42" height="12" rx="3" fill="#F59E0B" stroke="#B45309" stroke-width="1.2" transform="rotate(20 150 165)"/>
+  <rect x="120" y="170" width="48" height="12" rx="3" fill="#FBBF24" stroke="#D97706" stroke-width="1.2" transform="rotate(5 120 170)"/>
+
+  <!-- Jugo de lomo saltado (sillao y vinagre) -->
+  <ellipse cx="165" cy="160" rx="55" ry="40" fill="#451A03" opacity="0.85"/>
+
+  <!-- Tiras de lomo de res salteadas al wok con brillo de fuego -->
+  <rect x="140" y="130" width="42" height="18" rx="5" fill="#581C87" stroke="#3B0764" stroke-width="1" transform="rotate(10 140 130)"/>
+  <rect x="135" y="130" width="40" height="16" rx="4" fill="#3B1E08"/>
+  <rect x="165" y="145" width="38" height="17" rx="4" fill="#451A03"/>
+  <rect x="135" y="150" width="35" height="16" rx="4" fill="#3B1E08"/>
+
+  <!-- Gajos gruesos de tomate salteado -->
+  <path d="M 170 125 Q 185 120 195 135 Q 180 140 170 125" fill="#DC2626" stroke="#991B1B" stroke-width="1"/>
+  <path d="M 125 140 Q 140 135 145 150 Q 130 155 125 140" fill="#EF4444"/>
+
+  <!-- Plumas gruesas de cebolla roja morada -->
+  <path d="M 155 120 Q 175 115 180 130 Q 165 132 155 120" fill="#9333EA" stroke="#7E22CE" stroke-width="1.2"/>
+  <path d="M 145 145 Q 160 140 175 152 Q 155 155 145 145" fill="#A855F7"/>
+
+  <!-- Tiras de ají amarillo -->
+  <path d="M 150 160 Q 165 155 175 162" stroke="#F59E0B" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Hojas de culantro fresco salpicadas -->
+  <circle cx="160" cy="135" r="3" fill="#15803D"/>
+  <circle cx="178" cy="150" r="3.5" fill="#16A34A"/>
+  <circle cx="145" cy="165" r="3" fill="#15803D"/>
+
+  <!-- Porción de arroz blanco graneado -->
+  <ellipse cx="240" cy="145" rx="42" ry="34" fill="#FFFFFF" stroke="#E2D9CC" stroke-width="1.5"/>
+  <ellipse cx="240" cy="142" rx="38" ry="28" fill="#FAF6EE"/>
+
+  <!-- Badge Criollo -->
+  <rect x="20" y="20" width="76" height="26" rx="13" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.2"/>
+  <text x="58" y="37" font-family="sans-serif" font-size="11" font-weight="bold" fill="#B45309" text-anchor="middle">ALMUERZO</text>
+</svg>

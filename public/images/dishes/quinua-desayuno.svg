@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <rect width="400" height="300" fill="#FDFBF7"/>
+
+  <!-- Vaso / Taza de quinua carretillera -->
+  <path d="M 120 120 L 135 220 Q 170 230 205 220 L 220 120 Z" fill="#D97706" stroke="#92400E" stroke-width="2"/>
+  <ellipse cx="170" cy="120" rx="50" ry="15" fill="#F59E0B" stroke="#B45309" stroke-width="1.5"/>
+  <!-- Trozos de manzana cocida y canela en el borde -->
+  <ellipse cx="160" cy="120" rx="10" ry="5" fill="#FEF08A"/>
+  <rect x="180" y="105" width="4" height="25" fill="#78350F" transform="rotate(20 180 105)"/>
+
+  <!-- Plato pequeño con Pan francés y palta cremosa -->
+  <ellipse cx="270" cy="190" rx="60" ry="35" fill="#F5EFE6" stroke="#D5C5B2" stroke-width="2"/>
+  <!-- Pan francés crujiente abierto -->
+  <ellipse cx="270" cy="180" rx="42" ry="22" fill="#D97706" stroke="#92400E" stroke-width="1.5"/>
+  <ellipse cx="270" cy="176" rx="38" ry="18" fill="#FDE68A"/>
+  <!-- Palta fuerte fresca machacada verde vibrante -->
+  <ellipse cx="270" cy="174" rx="32" ry="14" fill="#15803D"/>
+  <ellipse cx="270" cy="172" rx="28" ry="10" fill="#22C55E"/>
+
+  <!-- Badge Desayuno -->
+  <rect x="20" y="20" width="86" height="26" rx="13" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.2"/>
+  <text x="63" y="37" font-family="sans-serif" font-size="11" font-weight="bold" fill="#B45309" text-anchor="middle">DESAYUNO</text>
+</svg>

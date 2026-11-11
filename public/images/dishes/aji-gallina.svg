@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <radialGradient id="plateGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="85%" stop-color="#F5EFE6"/>
+      <stop offset="100%" stop-color="#E5DCCE"/>
+    </radialGradient>
+    <radialGradient id="ajiGrad" cx="45%" cy="45%" r="60%">
+      <stop offset="0%" stop-color="#FBBF24"/>
+      <stop offset="50%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="300" fill="#FDFBF7"/>
+  <circle cx="200" cy="150" r="135" fill="#EFE8DD" opacity="0.5"/>
+  
+  <!-- Plato hondo -->
+  <circle cx="200" cy="150" r="125" fill="url(#plateGrad)" stroke="#D5C5B2" stroke-width="3"/>
+  <circle cx="200" cy="150" r="105" fill="#FBF7EE" stroke="#EFE6D8" stroke-width="2"/>
+  
+  <!-- Crema de Ají de Gallina espesa -->
+  <ellipse cx="180" cy="155" rx="75" ry="60" fill="url(#ajiGrad)"/>
+  <!-- Hebras de pollo deshilachado -->
+  <path d="M 140 145 Q 165 140 180 150" stroke="#FDE68A" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M 155 160 Q 175 165 200 155" stroke="#FDE68A" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M 135 165 Q 150 170 170 168" stroke="#FDE68A" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  
+  <!-- Rodajas de papa amarilla cocida en la base -->
+  <ellipse cx="140" cy="130" rx="22" ry="16" fill="#FCD34D" stroke="#F59E0B" stroke-width="1.5"/>
+  <ellipse cx="125" cy="155" rx="20" ry="15" fill="#FCD34D" stroke="#F59E0B" stroke-width="1.5"/>
+  
+  <!-- Arroz molde blanco -->
+  <ellipse cx="240" cy="140" rx="42" ry="34" fill="#FFFFFF" stroke="#E2D9CC" stroke-width="1.5"/>
+  <ellipse cx="240" cy="138" rx="38" ry="28" fill="#FAF6EE"/>
+
+  <!-- Medio huevo duro -->
+  <ellipse cx="170" cy="135" rx="22" ry="16" fill="#FFFFFF" stroke="#E2D9CC" stroke-width="1"/>
+  <ellipse cx="170" cy="135" rx="12" ry="9" fill="#F59E0B"/>
+  
+  <!-- Aceituna negra botija brillante -->
+  <ellipse cx="195" cy="145" rx="14" ry="10" fill="#18181B" filter="drop-shadow(0 2px 3px rgba(0,0,0,0.3))"/>
+  <ellipse cx="192" cy="142" rx="3" ry="1.5" fill="#A1A1AA" opacity="0.8"/>
+  
+  <!-- Nueces / pecanas picadas -->
+  <circle cx="160" cy="165" r="4" fill="#78350F"/>
+  <circle cx="175" cy="175" r="3.5" fill="#78350F"/>
+  <circle cx="205" cy="165" r="4" fill="#78350F"/>
+
+  <!-- Badge Criollo -->
+  <rect x="20" y="20" width="76" height="26" rx="13" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.2"/>
+  <text x="58" y="37" font-family="sans-serif" font-size="11" font-weight="bold" fill="#B45309" text-anchor="middle">ALMUERZO</text>
+</svg>
